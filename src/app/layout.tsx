@@ -1,8 +1,8 @@
 import './styles/globals.css';
-import { Inter } from 'next/font/google';
+import { Noto_Sans } from 'next/font/google';
 import React, {JSX} from "react";
 
-const inter = Inter({ subsets: ['latin'] });
+const notoSans = Noto_Sans({ weight: ['300', '400', '500', '700'], preload: false, subsets: ['latin'] });
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={notoSans.className}>{children}</body>
     </html>
   );
 }
