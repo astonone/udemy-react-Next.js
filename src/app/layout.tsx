@@ -1,6 +1,6 @@
 import './styles/globals.css';
 import { Noto_Sans } from 'next/font/google';
-import React, {JSX} from "react";
+import React, {JSX} from 'react';
 
 const notoSans = Noto_Sans({ weight: ['300', '400', '500', '700'], preload: false, subsets: ['latin'] });
 
