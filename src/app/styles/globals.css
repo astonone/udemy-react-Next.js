@@ -1,5 +1,6 @@
 :root {
 	--black: #3B434E;
+	--gray: #3B434E;
 	--gray-light: #EBEBEB;
 	--white: white;
 	--primary: #7653FC;
@@ -26,4 +27,8 @@ a {
 	text-decoration: none;
 
 	color: inherit;
+}
+
+.patsan {
+	color: #1DC37E !important;
 }
