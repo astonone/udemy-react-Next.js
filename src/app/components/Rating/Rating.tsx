@@ -28,7 +28,6 @@ export const Rating = ({isEditable = false, rating, setRating, children, ...prop
                         onKeyDown={(e: KeyboardEvent<SVGElement>) => isEditable && handleSpace(i + 1, e)}
                     />
                 </span>
-
             );
         });
         setRatingArray(updatedArray);
