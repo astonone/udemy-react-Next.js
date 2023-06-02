@@ -1,10 +1,10 @@
 import { GetStaticProps } from 'next';
 import React, { useState } from 'react';
 import axios from 'axios';
-import {Button, HTag, PTag, Rating, Tag} from "../components";
-import {withLayout} from "../layout/Layout";
-import {MenuItem} from "../interfaces/MenuItem.interface";
-import {HomeProps} from "../interfaces/HomeProps.interface";
+import {Button, HTag, PTag, Rating, Tag} from '../components';
+import {withLayout} from '../layout/Layout';
+import {MenuItem} from '../interfaces/MenuItem.interface';
+import {HomeProps} from '../interfaces/HomeProps.interface';
 
 function Home({ menu }: HomeProps): JSX.Element {
 	const [rating, setRating] = useState<number>(4);

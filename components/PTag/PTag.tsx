@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PTag.module.css';
 import cn from 'classnames';
-import {PTagProps} from "./PTag.props";
+import {PTagProps} from './PTag.props';
 
 export const PTag = ({size = 'm', children, className, ...props}: PTagProps): JSX.Element => {
     return (

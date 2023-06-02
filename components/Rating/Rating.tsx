@@ -2,7 +2,7 @@ import React, {KeyboardEvent, useEffect, useState} from 'react';
 import styles from './Rating.module.css';
 import cn from 'classnames';
 import StarIcon from './star.svg';
-import {RatingProps} from "./Rating.props";
+import {RatingProps} from './Rating.props';
 
 export const Rating = ({isEditable = false, rating, setRating, children, ...props}: RatingProps): JSX.Element => {
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './HTag.module.css';
 import cn from 'classnames';
-import {HTagProps} from "./HTag.props";
+import {HTagProps} from './HTag.props';
 
 export const HTag = ({tag, children, className, ...props}: HTagProps): JSX.Element => {
     switch (tag) {
