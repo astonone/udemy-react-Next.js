@@ -1,11 +1,12 @@
-'use client';
-import {JSX, useState} from 'react';
+import {JSX} from 'react';
 import {Button, HTag, PTag, Rating, Tag} from '@/app/components';
 import {withLayout} from '@/app/layout/Layout';
+import {GetStaticProps} from 'next';
+import axios from 'axios';
+import {MenuItem} from '@/app/interfaces/MenuItem.interface';
+import {HomeProps} from '@/app/interfaces/HomeProps.interface';
 
-function Home(): JSX.Element {
-    const [rating, setRating] = useState<number>(3);
-
+function Home({ menu, firstCategory}: HomeProps): JSX.Element {
     return (
         <>
             <HTag tag='h1'>Text</HTag>
@@ -22,9 +23,29 @@ function Home(): JSX.Element {
             <Tag size='s' color='green'>Green</Tag>
             <Tag color='primary'>Primary</Tag>
             <Tag color='primary' href='https://www.google.com'>Link</Tag>
-            <Rating rating={rating} isEditable setRating={setRating}/>
+            <Rating rating={3}/>
+            {/*{firstCategory}
+            <ul>
+                {menu.map(m => (<li key={m._id.secondCategory}>{m._id.secondCategory}</li>))}
+            </ul>*/}
         </>
     );
 }
 
 export default withLayout(Home);
+
+/*export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+    const firstCategory = 0;
+    const url = new URL('/api/top-page/find', process.env.NEXT_PUBLIC_DOMAIN);
+    const { data: menu } = await axios.post<MenuItem[]>(url.href, {
+        firstCategory
+    });
+    return {
+        props: {
+            menu,
+            firstCategory
+        }
+    };
+};*/
+
+
