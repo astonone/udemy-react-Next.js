@@ -1,8 +1,9 @@
 'use client';
 import {JSX, useState} from 'react';
 import {Button, HTag, PTag, Rating, Tag} from '@/app/components';
+import {withLayout} from '@/app/layout/Layout';
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
     const [rating, setRating] = useState<number>(3);
 
     return (
@@ -12,7 +13,8 @@ export default function Home(): JSX.Element {
             <Button appearance='ghost' arrow='down'>Button</Button>
             <PTag size='s'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur enim harum
                 ipsa minima necessitatibus nisi possimus quisquam, suscipit voluptatibus!</PTag>
-            <PTag size='m'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum nesciunt nihil nisi rem veniam?</PTag>
+            <PTag size='m'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum nesciunt nihil nisi rem
+                veniam?</PTag>
             <PTag size='l'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, repellendus.</PTag>
             <Tag size='s'>Small</Tag>
             <Tag size='m' color='red'>Red</Tag>
@@ -24,3 +26,5 @@ export default function Home(): JSX.Element {
         </>
     );
 }
+
+export default withLayout(Home);
