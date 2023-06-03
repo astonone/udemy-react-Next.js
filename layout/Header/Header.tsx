@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 import cn from 'classnames';
-import {HeaderProps} from "./Header.props";
+import {HeaderProps} from './Header.props';
 
 
 export const Header = ({...props}: HeaderProps): JSX.Element => {

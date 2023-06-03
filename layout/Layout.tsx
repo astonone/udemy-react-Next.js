@@ -1,9 +1,9 @@
 import React, {Component, FunctionComponent} from 'react';
 import styles from './Layout.module.css';
-import {LayoutProps} from "./Layout.props";
-import {Header} from "./Header/Header";
-import {SideBar} from "./SideBar/SideBar";
-import {Footer} from "./Footer/Footer";
+import {LayoutProps} from './Layout.props';
+import {Header} from './Header/Header';
+import {SideBar} from './SideBar/SideBar';
+import {Footer} from './Footer/Footer';
 
 const Layout = ({children, ...props}: LayoutProps): JSX.Element => {
     return (

@@ -11,20 +11,20 @@ function Home({menu}: HomeProps): JSX.Element {
 
 	return (
 		<>
-			<HTag tag='h1'>Text</HTag>
-			<Button appearance='primary' arrow='right'>Button</Button>
-			<Button appearance='ghost' arrow='down'>Button</Button>
+			<HTag tag='h1'>Текст</HTag>
+			<Button appearance='primary' arrow='right'>Кнопка</Button>
+			<Button appearance='ghost' arrow='down'>Кнопка</Button>
 			<PTag size='s'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque consequuntur enim harum
 				ipsa minima necessitatibus nisi possimus quisquam, suscipit voluptatibus!</PTag>
 			<PTag size='m'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut earum nesciunt nihil nisi rem
 				veniam?</PTag>
 			<PTag size='l'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, repellendus.</PTag>
-			<Tag size='s'>Small</Tag>
-			<Tag size='m' color='red'>Red</Tag>
-			<Tag size='m' color='gray'>Gray</Tag>
-			<Tag size='s' color='green'>Green</Tag>
-			<Tag color='primary'>Primary</Tag>
-			<Tag color='primary' href='https://www.google.com'>Link</Tag>
+			<Tag size='s'>Шмолл</Tag>
+			<Tag size='m' color='red'>Красный</Tag>
+			<Tag size='m' color='gray'>Серый</Tag>
+			<Tag size='s' color='green'>Зеленый</Tag>
+			<Tag color='primary'>Основной</Tag>
+			<Tag color='primary' href='https://www.google.com'>Ссылка</Tag>
 			<Rating rating={rating} isEditable setRating={setRating}/>
 			<ul>
 				{menu.map(m => (<li key={m._id.secondCategory}>{m._id.secondCategory}</li>))}
